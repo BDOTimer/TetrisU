@@ -12,6 +12,8 @@ public class Mover01 : MonoBehaviour
         //korz = GameObject.Find("Korzina").GetComponent<GameObject>();
         rb = GetComponent<Rigidbody>();
         fig = GameObject.Find("Figure").GetComponent<Fig01>();
+
+        rb.freezeRotation = true;
     }
 
     void Start()
@@ -29,5 +31,11 @@ public class Mover01 : MonoBehaviour
     void FixedUpdate()
     {
         MonoBehaviour.print(rb.transform.position);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        fig.Generator();
+        rb.MovePosition(new Vector3(0, 6, 0));
     }
 }
