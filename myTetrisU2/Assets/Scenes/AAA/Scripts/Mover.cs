@@ -38,5 +38,7 @@ public class Mover : MonoBehaviour
         {
             fg.CF.StartFall();
         }
+
+        MonoBehaviour.print(transform.position);
     }
 }
