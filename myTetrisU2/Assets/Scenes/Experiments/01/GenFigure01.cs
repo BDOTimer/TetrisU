@@ -65,7 +65,7 @@ public class GenFigure01 //: MonoBehaviour
         //var t = fig.transform.position;
         //fig.transform.position = Vector3.zero;
         //fig.transform.rotation = Quaternion.Euler(0, 0, 90 * rnd);
-        fig.transform.Rotate(0, 0, 90.0f * rnd, Space.Self);
+        //fig.transform.Rotate(0, 0, 90.0f * rnd, Space.Self);
         //fig.transform.position = t;
     }
 

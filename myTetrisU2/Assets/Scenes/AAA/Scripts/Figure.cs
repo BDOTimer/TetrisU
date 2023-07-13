@@ -242,8 +242,6 @@ namespace spaceFigure
             //mov.transform.rotation = Quaternion.Euler(Vector3.zero);
             mov.transform.Translate (startpos);
 
-            
-
             MonoBehaviour.print("mov.transform.position.x = " + mov.transform.position.x);
             MonoBehaviour.print("mov.transform.position.y = " + mov.transform.position.y);
             MonoBehaviour.print("fig.transform.position.x = " + fig.transform.position.x);

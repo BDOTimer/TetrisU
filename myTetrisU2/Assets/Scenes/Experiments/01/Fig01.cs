@@ -29,7 +29,7 @@ public class Fig01 : MonoBehaviour
     {
         GameObject
         ins = MonoBehaviour.Instantiate(prefab);
-        //ins.transform.position = new Vector3(0, 0, 0);
+      //ins.transform.position = new Vector3(0, 0, 0);
         ins.transform.parent   = transform;
     }
 
